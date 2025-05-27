@@ -19,7 +19,7 @@ log "Script started."
 log "Generating dynamic login logs..."
 > "$LOG_FILE"  # Clear previous logs
 
-USERS=("eshwar" "admin" "user01" "testuser" "devops" "qauser")
+USERS=("eshwar" "admin" "user01" "testuser" "devops" "qauser" "dhanush" )
 for i in {1..5}; do
     USER=${USERS[$RANDOM % ${#USERS[@]}]}
     IP="192.168.1.$((RANDOM % 100 + 1))"
