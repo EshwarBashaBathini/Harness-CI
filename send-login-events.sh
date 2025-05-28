@@ -1,5 +1,5 @@
 #!/bin/bash
-#Hii_Namaste
+
 #yaml_file_changed
 
 # Set timezone to IST
