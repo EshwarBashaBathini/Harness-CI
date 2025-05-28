@@ -1,5 +1,5 @@
 #!/bin/bash
-#Hii
+#Hii_Namaste
 # Paths
 LOG_DIR="../logs"
 LOG_FILE="$LOG_DIR/log.txt"
