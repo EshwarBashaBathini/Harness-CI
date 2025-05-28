@@ -1,5 +1,6 @@
 #!/bin/bash
 #Hii_Namaste
+#yaml_file changed
 # Paths
 LOG_DIR="../logs"
 LOG_FILE="$LOG_DIR/log.txt"
