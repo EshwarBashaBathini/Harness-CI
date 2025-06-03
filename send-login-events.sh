@@ -46,9 +46,11 @@ while IFS= read -r line; do
     EVENT_TIME_LOCAL=$(echo "$line" | grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}')
     EVENT_EPOCH=$(date -d "$EVENT_TIME_LOCAL" +%s)
 
+  # cloud hec: 0202e8d8-f18c-4424-ab11-ad4d805927b1
+  # cloud url: https://prd-p-xugh6.splunkcloud.com:8088
     curl --silent --output /dev/null \
-         -k https://prd-p-xugh6.splunkcloud.com:8088/services/collector \
-         -H "Authorization: Splunk 0202e8d8-f18c-4424-ab11-ad4d805927b1" \
+         -k https://323f-136-232-205-158.ngrok-free.app/services/collector \
+         -H "Authorization: Splunk 69c3a7ed-d6d5-434a-b19d-4f739f3f8683" \
          -H "Content-Type: application/json" \
          -d "{
                 \"time\": $EVENT_EPOCH,
