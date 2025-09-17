@@ -65,7 +65,7 @@ while IFS= read -r line; do
         log "✅ Sent login event at $EVENT_TIME_LOCAL ($EVENT_EPOCH): $line"
     else
         log "❌ Failed to send login event at $EVENT_TIME_LOCAL: $line"
-    fi
+    file
 done < "$LOG_FILE"
 
 log "Script finished."
